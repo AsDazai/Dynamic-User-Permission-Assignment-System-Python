@@ -1,0 +1,56 @@
+1. Insert a User
+Request Type: POST
+URL: http://127.0.0.1:5000/api/users
+Headers:
+{
+    "username": "john_doe",
+    "password": "secure123",
+    "email": "john_doe@example.com",
+    "role_name": "User"
+}
+
+
+
+
+2. Get All Users
+Request Type: GET
+URL: http://127.0.0.1:5000/api/users
+
+Headers:
+No additional headers needed.
+
+3. Insert an Employee (Admin Permission Required)
+Request Type: POST
+URL: http://127.0.0.1:5000/api/employees
+Headers:
+{
+    "employee_name": "Alice Johnson",
+    "department": "HR",
+    "username": "jane_admin"
+}
+
+4. Get All Employees
+Request Type: GET
+URL: http://127.0.0.1:5000/api/employees
+
+Headers:
+No additional headers needed.
+
+
+5. Update an Employee (Admin Permission Required)
+Request Type: PUT
+URL: http://127.0.0.1:5000/api/employees/1
+Headers:
+{
+    "department": "Finance",
+    "username": "jane_admin"
+}
+
+
+
+6. Delete an Employee (Admin Permission Required)
+Request Type: DELETE
+URL: http://127.0.0.1:5000/api/employees/1?username=jane_admin
+
+Headers:
+No additional headers needed.
