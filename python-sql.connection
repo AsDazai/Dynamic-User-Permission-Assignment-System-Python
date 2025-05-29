@@ -2,6 +2,7 @@ import os
 import oracledb
 from flask import Flask, jsonify, request
 
+
 app = Flask(__name__)
 
 dsn = os.getenv('DB_DSN', oracledb.makedsn("localhost", 1521, service_name="XE"))
